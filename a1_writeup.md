@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+Way Easier Than Java, printing is lines is easier and the syntax is easier to understand. 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+Python's syntax is less complex than Java and writing stuff like loops and lists are easier and less character heavy
 
 3. What are some things that you learned through this assignment?
+
+How to do the basics of Python and how to do everything I learned in Java in Python.
