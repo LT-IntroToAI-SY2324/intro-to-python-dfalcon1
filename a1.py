@@ -40,13 +40,13 @@ def factorial(n: int) -> int:
         factorial of the passed in number
     """
     n1=n
+    fact= 1
     while n1>=1:
-        n = n * n1
-        n1= n1-1
-    return n
-
+        fact = fact * n1
+        n1=n1-1
+    return fact
+    
     raise NotImplementedError("factorial")
-
 
 T = TypeVar("T")
 
