@@ -134,12 +134,12 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
         if current == "duck1":
             current = "duck2"
             i += 1
-        elif current == "duck2"
-        current = "goose"
-    else:
-        current = "duck1"
-        lst.pop(i)
-    i %= len(lst)
+        elif current == "duck2":
+            current = "goose"
+        else:
+            current = "duck1"
+            lst.pop(i)
+        i %= len(lst)
     return lst
     raise NotImplementedError("duck_duck_goose")
     
