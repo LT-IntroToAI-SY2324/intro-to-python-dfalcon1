@@ -103,7 +103,11 @@ def median(lst: List[int]) -> float:
         the median of the passed in list
     """
     raise NotImplementedError("median")
-
+if len(lst) % 2 == 1:
+    return lst[len(lst)//2]
+else:
+    el1 = lst[len(lst)//2]
+    el2 = lst[len(lst)//2]
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
     """Given an list of names (strings), play 'duck duck goose' with it, knocking out
@@ -124,7 +128,21 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
+    i = 0
+    current = "duck1"
+    while i <= 2:
+        if current == "duck1":
+            current = "duck2"
+            i += 1
+        elif current == "duck2"
+        current = "goose"
+    else:
+        current = "duck1"
+        lst.pop(i)
+    i %= len(lst)
+    return lst
     raise NotImplementedError("duck_duck_goose")
+    
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
@@ -142,5 +160,8 @@ if __name__ == "__main__":
 
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
-
+    # 1st pass - [roscoe, kim, solin, law remess]
+    # 2nd pass - [roscoe, kim, law]
+    # 3rd pass - [roscoe, law]
+    print(duck_duck_goose(names))
     print("All tests passed!")
